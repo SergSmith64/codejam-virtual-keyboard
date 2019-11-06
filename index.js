@@ -39,39 +39,19 @@
 //   { 'en': 'pause', 'ru': 'pause', 'keyCode': 16 },
 // ]
 
-// const container = document.createElement('div');
-// document.body.appendChild(container);
-// container.className = 'container';
-
-// const textarea = document.createElement('textarea');
-// textarea.setAttribute('name', 'message');
-// textarea.setAttribute('rows', '20');
-// textarea.setAttribute('cols', '100');
-
-// container.appendChild(textarea);
-
-
-// const keyboard = document.createElement('div');
-// container.appendChild(keyboard);
-// keyboard.className = 'keyboard';
-
-// window.onload = () => {
-//   generateKeyboard();
-// }
-
-// function generateKeyboard () {
-//   keys.map(key => {
-//       let keyBtn = document.createElement('div');
-//       keyBtn.classList.add('keyBtn');
-//       keyboard.prepend(keyBtn);
-//   })
-// }
-
+window.onload = function () {
 
 // ___с сайта Ильи Кантора ____
-let div = document.createElement('div');
-div.className = "wrapper";
-div.innerHTML = "<strong>Всем привет!</strong> <br>Вы прочитали важное сообщение.";
+  let screen = document.createElement('div');
+  screen.className = 'wrap-screen';
+  screen.innerHTML = '<textarea class="screen-txt" id="screen" rows="5" autofocus></textarea>';
+  document.body.append(screen);
+  let wrapRow = document.createElement('div');
+  wrapRow.className = 'wrap-keyboard';
+  
 
-// ___выводит сам DIV ___
-document.body.append(div);
+
+
+
+
+}

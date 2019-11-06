@@ -5,17 +5,38 @@
 
 body {
   background-color: gray;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
 
-.wrapper {
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 40px;
+.wrap-keyboard {
+  width: 800px;
+  margin: 0 auto 50px;
   border: 1px solid #d6e9c6;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #FFF;
+  padding: 20px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px #e8e8e8, 10px 10px 20px #e2e2e2, inset 0px 5px 5px rgba(255, 255, 255, 0.8);
+          box-shadow: 5px 5px 2px #e8e8e8, 10px 10px 20px #e2e2e2, inset 0px 5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.row-key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap-screen {
+  width: 800px;
+  padding: 20px;
+  margin: 50px auto 20px;
+  background-color: #F7F7F7;
 }
 /*# sourceMappingURL=style.css.map */
