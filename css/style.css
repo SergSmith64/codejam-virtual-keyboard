@@ -7,6 +7,7 @@ body {
   background-color: gray;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  text-align: center;
 }
 
 .wrap-keyboard {
@@ -15,9 +16,7 @@ body {
   border: 1px solid #d6e9c6;
   padding: 20px;
   background-color: #F7F7F7;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 2px #e8e8e8, 10px 10px 20px #e2e2e2, inset 0px 5px 5px rgba(255, 255, 255, 0.8);
-          box-shadow: 5px 5px 2px #e8e8e8, 10px 10px 20px #e2e2e2, inset 0px 5px 5px rgba(255, 255, 255, 0.8);
+  border-radius: 17px;
 }
 
 .row-key {
@@ -33,10 +32,86 @@ body {
           justify-content: space-between;
 }
 
+.key {
+  margin: 5px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #E6E6E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 17px;
+  color: #666;
+  text-shadow: 1px 1px 1px #fff;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.key:hover {
+  background-color: #e2e2e2;
+  -webkit-transition: background-color 600ms linear;
+  transition: background-color 600ms linear;
+}
+
+#Delete,
+#Tab,
+#CapsLock,
+#Enter,
+#ShiftLeft,
+#ShiftRight,
+#Space,
+#ControlRight,
+#Backspace {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#ControlRight {
+  -webkit-box-flex: 0.075;
+      -ms-flex-positive: 0.075;
+          flex-grow: 0.075;
+}
+
+.key-active {
+  background-color: #e2e2e2;
+  color: red;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.35);
+  -webkit-transition: background-color 800ms linear;
+  transition: background-color 800ms linear;
+}
+
 .wrap-screen {
   width: 800px;
   padding: 20px;
   margin: 50px auto 20px;
   background-color: #F7F7F7;
+  border-radius: 17px;
+}
+
+.screen-txt {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 5px;
+  border: 2px solid #E8E8E8;
+}
+
+.screen-txt:focus {
+  outline-color: #AFAFAF;
+}
+
+.en-ru {
+  font-style: 16px;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
