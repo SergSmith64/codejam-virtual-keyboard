@@ -1,6 +1,4 @@
 window.onload = function () {
-
-// ___с сайта Ильи Кантора ____
   let screen = document.createElement('div');
   screen.className = 'wrap-screen';
   screen.innerHTML = '<textarea class="screen-txt" id="screen" rows="5" autofocus></textarea>';
