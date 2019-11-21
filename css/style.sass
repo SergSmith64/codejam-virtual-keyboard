@@ -1,0 +1,80 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  background-color: gray
+  font-family: "Roboto", sans-serif
+  font-size: 18px
+  text-align: center
+
+.wrap-keyboard
+  width: 800px
+  margin: 0 auto 50px
+  border: 1px solid #d6e9c6
+  padding: 20px
+  background-color: #F7F7F7
+  border-radius: 17px
+
+.row-key
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.key
+  margin: 5px
+  height: 40px
+  border-radius: 6px
+  background-color: #E6E6E6
+  display: flex
+  flex-direction: column
+  justify-content: center
+  font-size: 17px
+  color: #666
+  text-shadow: 1px 1px 1px #fff
+  flex-basis: 40px
+  cursor: pointer
+  text-align: center
+  &:hover
+    background-color: #e2e2e2
+    transition: background-color 600ms linear
+
+
+#Delete,
+#Tab,
+#CapsLock,
+#Enter,
+#ShiftLeft,
+#ShiftRight,
+#Space,
+#ControlRight,
+#Backspace
+  flex-grow: 1
+
+#ControlRight
+  flex-grow: 0.075
+
+.key-active
+  background-color: #e2e2e2
+  color: red
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.35)
+  transition: background-color 800ms linear
+
+.wrap-screen
+  width: 800px
+  padding: 20px
+  margin: 50px auto 20px
+  background-color: #F7F7F7
+  border-radius: 17px
+
+.screen-txt
+  width: 100%
+  min-height: 150px
+  border-radius: 5px
+  border: 2px solid #E8E8E8
+  &:focus
+    outline-color: #AFAFAF
+  
+.en-ru
+  font-style: 16px
+  color: #000
